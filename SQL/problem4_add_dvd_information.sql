@@ -1,0 +1,7 @@
+CREATE OR REPLACE PROCEDURE add_dvd_information
+(pid IN NUMBER, ptitle IN VARCHAR2)
+IS
+BEGIN
+	INSERT INTO Dvds VALUES(pid,ptitle);
+END;
+/
